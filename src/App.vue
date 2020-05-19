@@ -1,28 +1,50 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Hero />
+    <main class="mt-5">
+      <mdb-container>
+        <ReportAbuse />
+        <hr class="my-5" />
+        <Education />
+        <hr class="my-5" />
+        <Contacts />
+      </mdb-container>
+    </main>
+    <FooterBar />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Hero from "./components/Hero";
+import ReportAbuse from "./components/ReportAbuse";
+import FooterBar from "./components/FooterBar";
+import Education from "./components/Education";
+import Contacts from "./components/Contacts";
+
+import { mdbContainer } from "mdbvue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Hero,
+    FooterBar,
+    ReportAbuse,
+    mdbContainer,
+    Education,
+    Contacts
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+$image-path: "~@/../mdb/mdbvue/img";
+@import "~@/../mdb/mdbvue/scss/mdb-free.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+html,
+body,
+header {
+  height: 100%;
 }
 </style>
