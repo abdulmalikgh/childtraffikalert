@@ -1,11 +1,9 @@
 <template>
   <section id="contacts">
     <h2 class="h1-responsive font-weight-bold text-center mb-5 pt-5">Contact us</h2>
-    <p class="text-center w-responsive mx-auto mb-5">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-      error amet numquam iure provident voluptate esse quasi, veritatis
-      totam voluptas nostrum quisquam eum porro a pariatur veniam.
-    </p>
+    <p
+      class="text-center w-responsive mx-auto mb-5"
+    >If you need further information or feedback you can conctact us or fill the form below</p>
     <div class="row">
       <div class="col-md-9 mb-md-0 mb-5">
         <form class="ml-5 mr-5 mb-3">

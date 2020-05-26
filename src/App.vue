@@ -3,6 +3,7 @@
     <Hero />
     <main class="mt-5">
       <mdb-container>
+        <AboutUs />
         <ReportAbuse />
         <hr class="my-5" />
         <Education />
@@ -16,6 +17,7 @@
 
 <script>
 import Hero from "./components/Hero";
+import AboutUs from "./components/AboutUs";
 import ReportAbuse from "./components/ReportAbuse";
 import FooterBar from "./components/FooterBar";
 import Education from "./components/Education";
@@ -31,7 +33,8 @@ export default {
     ReportAbuse,
     mdbContainer,
     Education,
-    Contacts
+    Contacts,
+    AboutUs
   }
 };
 </script>
